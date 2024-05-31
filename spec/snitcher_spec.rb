@@ -69,7 +69,7 @@ describe Snitcher do
   end
 
   describe ".snitch" do
-    it "returns true on a successfuly check-in" do
+    it "returns true on a successfully check-in" do
       stub_request(:get, "https://nosnch.in/#{token}").to_return(status: 202)
 
       result = Snitcher.snitch(token)
